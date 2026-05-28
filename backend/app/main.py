@@ -12,6 +12,24 @@ from app.logic.glass_mapping import (
     parse_user_mappings,
 )
 
+from fastapi.middleware.cors import CORSMiddleware
+
+allowed_origins = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:5500",
+    "http://127.0.0.1:5500",
+    "https://csclub05.github.io",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=False,
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
+)
+
 app = FastAPI(title="Glass Spawnproofer", version="0.2.0")
 
 app.add_middleware(
