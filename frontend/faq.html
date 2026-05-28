@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>FAQ — Glass Spawnproofer</title>
+    <meta name="description" content="Common questions about Glass Spawnproofer, schematic support, custom mappings, and spawnproofing limitations." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+    <header class="top-nav" aria-label="Site navigation">
+      <a class="brand-link" href="index.html">Glass Spawnproofer</a>
+      <nav class="nav-links">
+        <a href="index.html">Tool</a>
+      </nav>
+    </header>
+<section class="card page-card">
+        <p class="eyebrow">Support</p>
+        <h1>FAQ</h1>
+        <p class="lede">Answers to common questions about supported files, custom mappings, and what the tool can and cannot detect.</p>
+      </section>
+
+      <section class="card content-card">
+        <div class="faq-list">
+          <article>
+            <h2>Does Glass Spawnproofer guarantee that every marked block can spawn mobs?</h2>
+            <p>No. It marks potential spawning spaces based on schematic block data. Minecraft uses additional world conditions that may not exist inside a schematic file.</p>
+          </article>
+
+          <article>
+            <h2>Which file formats are supported?</h2>
+            <p>The current implementation supports <code>.litematic</code> input and outputs a modified <code>.litematic</code>. <code>.schem</code> support is planned but not complete in this build.</p>
+          </article>
+
+          <article>
+            <h2>Will my original schematic be changed?</h2>
+            <p>No. The app downloads a new marked schematic. Your original file remains unchanged on your computer.</p>
+          </article>
+
+          <article>
+            <h2>Why is a block getting the wrong glass color?</h2>
+            <p>The default mapping may not include that block yet. Add a custom mapping on the tool page to override the color for that exact block ID.</p>
+          </article>
+
+          <article>
+            <h2>Do custom mappings sync between devices?</h2>
+            <p>No. They are stored in the current browser using local storage. A future version may add import/export for mapping presets.</p>
+          </article>
+
+          <article>
+            <h2>Can I use this for Bedrock Edition?</h2>
+            <p>The tool is designed around Java-style schematic formats and Java block IDs. Bedrock behavior may differ and is not the primary target for this version.</p>
+          </article>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <p>
+          Glass Spawnproofer is an independent tool and is not an official Minecraft product.
+          It is not approved by or associated with Mojang or Microsoft.
+        </p>
+      </footer>
+</main>
+  </body>
+</html>

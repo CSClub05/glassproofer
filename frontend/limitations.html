@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Limitations — Glass Spawnproofer</title>
+    <meta name="description" content="Important limitations of Glass Spawnproofer, including spawn-detection accuracy and supported schematic formats." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+    <header class="top-nav" aria-label="Site navigation">
+      <a class="brand-link" href="index.html">Glass Spawnproofer</a>
+      <nav class="nav-links">
+        <a href="index.html">Tool</a>
+      </nav>
+    </header>
+<section class="card page-card">
+        <p class="eyebrow">Read before use</p>
+        <h1>Limitations</h1>
+        <p class="lede">Glass Spawnproofer is useful, but it does not replace full in-game testing or Minecraft’s complete spawning logic.</p>
+      </section>
+
+      <section class="card content-card">
+        <h2>Current format support</h2>
+        <p>
+          The current version is focused on <code>.litematic</code> input and <code>.litematic</code> output.
+          Sponge <code>.schem</code> import is not complete yet.
+        </p>
+
+        <h2>Potential spawn spaces, not exact simulation</h2>
+        <p>
+          A schematic usually does not contain all the live-world data needed for perfect mob-spawning prediction.
+          The app does not fully account for biome, dimension, light updates, nearby players, mob type, difficulty,
+          server plugins, or modded spawning rules.
+        </p>
+
+        <h2>Block-shape edge cases</h2>
+        <p>
+          Minecraft has many partial blocks and version-specific behaviors. Stairs, slabs, snow layers, carpets,
+          trapdoors, fences, walls, hoppers, leaves, modded blocks, and unusual block states may need additional handling.
+        </p>
+
+        <h2>Color mapping is approximate</h2>
+        <p>
+          The app uses default mappings and user overrides to decide glass colors. Some blocks have no obvious correct color,
+          so manual mapping preferences are supported.
+        </p>
+
+        <h2>Large files</h2>
+        <p>
+          Very large schematics may take longer to process and can require more memory. Production deployments should set upload limits,
+          processing timeouts, and clear error messages.
+        </p>
+      </section>
+      <footer class="site-footer">
+        <p>
+          Glass Spawnproofer is an independent tool and is not an official Minecraft product.
+          It is not approved by or associated with Mojang or Microsoft.
+        </p>
+      </footer>
+</main>
+  </body>
+</html>
