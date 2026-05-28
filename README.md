@@ -2,14 +2,6 @@
 
 Glass Spawnproofer is a local desktop application for marking potential spawnable spaces in Minecraft `.litematic` files with stained glass.
 
-This version is a true Python desktop app:
-
-- no website backend
-- no GitHub Pages
-- no Render
-- no Electron
-- no HTML/CSS/JavaScript UI
-
 ## Run locally
 
 ```bash
