@@ -9,8 +9,11 @@ const addMappingButton = document.querySelector('#add-mapping');
 const clearMappingsButton = document.querySelector('#clear-mappings');
 const mappingTableBody = document.querySelector('#mapping-table-body');
 
-const API_URL = 'https://glassproofer.onrender.com';
-const MAPPINGS_URL = 'http://localhost:8000/api/glass-mappings';
+const API_BASE = 'https://glass-spawnproofer-api.onrender.com';
+
+const API_URL = `${API_BASE}/api/mark-spawns`;
+const MAPPINGS_URL = `${API_BASE}/api/glass-mappings`;
+
 const STORAGE_KEY = 'minecraft-spawn-marker.custom-glass-mappings.v1';
 
 const FALLBACK_COLORS = [
