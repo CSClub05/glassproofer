@@ -39,9 +39,3 @@ macOS/Linux:
 ```
 
 The built app will appear in `dist/`.
-
-## High-DPI / blurry text fix
-
-The app enables high-DPI awareness on Windows before Tkinter creates the main window. The Windows build also includes `app.manifest`, which tells Windows not to bitmap-scale the app on high-DPI displays.
-
-If the app still looks blurry on Windows, rebuild it with `build_windows.bat` and make sure the generated executable is the one being opened. If it looks blurry when running from source, use a recent Python installer from python.org, because old Tk builds can render poorly on high-DPI displays.
